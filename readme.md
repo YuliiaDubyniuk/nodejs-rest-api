@@ -1,31 +1,39 @@
-## GoIT Node.js Course Template Homework
+# Node.js REST API
 
-Виконайте форк цього репозиторію для виконання домашніх завдань (2-6)
-Форк створить репозиторій на вашому http://github.com
+A RESTful API built with **Node.js** and **Express**. Includes full CRUD operations for user/contact resources, with validation, authentication, and proper error handling.
 
-Додайте ментора до колаборації
+---
 
-Для кожної домашньої роботи створюйте свою гілку.
+## Features
 
-- hw02
-- hw03
-- hw04
-- hw05
-- hw06
+- REST endpoints for user or contact management:
+  - `GET` all items or by ID  
+  - `POST` to create  
+  - `PATCH` to update  
+  - `DELETE` to remove  
+- Data storage using MongoDB (via Mongoose)
+- Token-based authorization
+- Data validation and structured error handling
+- Development workflow with nodemon for live reload
+- Linting support (`ESLint`) to ensure code quality
 
-Кожна нова гілка для др повинна робитися з master
+---
 
-Після того, як ви закінчили виконувати домашнє завдання у своїй гілці, необхідно зробити пулл-реквест (PR). Потім додати ментора для рев'ю коду. Тільки після того, як ментор заапрувить PR, ви можете виконати мердж гілки з домашнім завданням у майстер.
+## Getting Started
 
-Уважно читайте коментарі ментора. Виправте зауваження та зробіть коміт у гілці з домашнім завданням. Зміни підтягнуться у PR автоматично після того, як ви відправите коміт з виправленнями на github
-Після виправлення знову додайте ментора на рев'ю коду.
+### Prerequisites
 
-- При здачі домашньої роботи є посилання на PR
-- JS-код чистий та зрозумілий, для форматування використовується Prettier
+- Node.js (v14+, LTS recommended)
+- npm
+- MongoDB
 
-### Команди:
+### Installation
 
-- `npm start` &mdash; старт сервера в режимі production
-- `npm run start:dev` &mdash; старт сервера в режимі розробки (development)
-- `npm run lint` &mdash; запустити виконання перевірки коду з eslint, необхідно виконувати перед кожним PR та виправляти всі помилки лінтера
-- `npm lint:fix` &mdash; та ж перевірка лінтера, але з автоматичними виправленнями простих помилок
+```bash
+git clone https://github.com/YuliiaDubyniuk/nodejs-rest-api.git
+cd nodejs-rest-api
+npm install
+
+## Running the Server
+- `npm start` &mdash; run server (production)
+- `npm run start:dev` &mdash; run server (development)

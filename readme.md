@@ -6,13 +6,13 @@ A RESTful API built with **Node.js** and **Express**. Includes full CRUD operati
 
 ## Features
 
-- REST endpoints for user or contact management:
+- REST endpoints for contact management:
   - `GET` all items or by ID  
   - `POST` to create  
   - `PATCH` to update  
   - `DELETE` to remove  
 - Data storage using MongoDB (via Mongoose)
-- Token-based authorization
+- Token-based user authorization
 - Data validation and structured error handling
 - Development workflow with nodemon for live reload
 - Linting support (`ESLint`) to ensure code quality
